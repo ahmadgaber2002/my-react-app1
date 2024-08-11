@@ -1,0 +1,263 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: url('/weather.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.weather-header {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.weather-header h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.current-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.temperature-box {
+  text-align: left;
+}
+
+.feels-like {
+  font-size: 1rem;
+  color: #666;
+}
+
+.temperature {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 5px 0;
+  color: #4a90e2;
+}
+
+.high-low {
+  font-size: 1rem;
+}
+
+.current-weather-icon {
+  text-align: center;
+}
+
+.current-weather-icon svg {
+  margin-bottom: 10px;
+}
+
+.sun-times {
+  text-align: right;
+  font-size: 1rem;
+}
+
+.weather-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  flex-wrap: wrap;
+}
+
+.weather-details p {
+  margin: 5px 0;
+  flex-basis: 48%;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.forecast-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  margin-top: 20px;
+}
+
+.forecast-table th {
+  background-color: rgba(74, 144, 226, 0.7);
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  text-align: left;
+}
+
+.forecast-table td {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 12px;
+}
+
+.forecast-table .date-row td {
+  background-color: rgba(74, 144, 226, 0.7);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.expand-button {
+  background: none;
+  border: none;
+  color: #4a90e2;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.advanced-details {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.advanced-details-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 15px;
+}
+
+.advanced-details-content p {
+  margin: 5px 0;
+}
+
+.weather-description {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .weather-details {
+    flex-direction: column;
+  }
+  
+  .weather-details p {
+    flex-basis: 100%;
+  }
+  
+  .forecast-table {
+    font-size: 0.9rem;
+  }
+}
+
+.weather-alerts {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.weather-alerts h2 {
+  color: #e74c3c;
+  margin-bottom: 15px;
+}
+
+.alert-item {
+  background-color: rgba(231, 76, 60, 0.1);
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.alert-item h3 {
+  color: #e74c3c;
+  margin-top: 0;
+}
+
+.alert-item button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.alert-item button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.alert-explanation {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.chatgpt-assistant {
+  background-color: rgba(74, 144, 226, 0.8); /* Light blue background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.chatgpt-assistant h2 {
+  color: #ffffff; /* White text color */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.chatgpt-assistant p {
+  color: #ffffff; /* White text for explanation */
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+
+.chatgpt-assistant input[type="text"], .chatgpt-assistant textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #4a90e2; /* Light blue border */
+  background-color: #e6f0fa; /* Lightest blue background */
+  color: #333333; /* Dark text color for contrast */
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.chatgpt-assistant button {
+  background-color: #4a90e2; /* Blue button */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.chatgpt-assistant button:hover {
+  background-color: #357ABD; /* Darker blue on hover */
+}
+
+.chatgpt-assistant p {
+  background-color: #ffffff; /* White background for the response area */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #4a90e2; /* Light blue border for separation */
+  font-size: 1rem;
+  white-space: pre-wrap;
+  color: #333333; /* Dark text for readability */
+  margin-top: 10px;
+}
