@@ -21,8 +21,8 @@ const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY
 });
 
-const WEATHER_API_KEY = process.env.WEATHER_API_KEY;
-const CITY_ID = '5318313';
+const WEATHER_API_KEY = process.env.WEATHER_API_KEY; // ADD your WEATHER_API_KEY in .env file
+const CITY_ID = ''; // Add your City ID
 
 // Serve static files from the React app
 app.use(express.static(join(__dirname, 'dist')));
