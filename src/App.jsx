@@ -16,8 +16,8 @@ const App = () => {
   const [expandedRows, setExpandedRows] = useState({});
   const [alertExplanation, setAlertExplanation] = useState('');
   const [isLoadingExplanation, setIsLoadingExplanation] = useState(false);
-  const API_KEY = '13b417d96400c5f9d3b3cfbe13737bf6';
-  const CITY_ID = '5318313';
+  const API_KEY = ''; // Add your API key for weather
+  const CITY_ID = ''; // Add your City ID
 
 
   useEffect(() => {
